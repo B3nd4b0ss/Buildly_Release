@@ -9,16 +9,16 @@
 </p>
 
 <p align="center">
-  <strong>Version 0.2.1</strong> · released September 26, 2026 · Windows, macOS and Linux
+  <strong>Version 0.2.2</strong> · released September 26, 2026 · Windows, macOS and Linux
 </p>
 
 ## Download
 
 | System | Download |
 | --- | --- |
-| **Windows** 10, 11 | [![Windows Installer (.exe)](https://img.shields.io/badge/Windows-Installer_%28.exe%29-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.1/Buildly_0.2.1_x64-setup.exe)<br><sub>or the [.msi package](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.1/Buildly_0.2.1_x64_en-US.msi)</sub> |
-| **macOS** 11 or newer | [![macOS Apple Silicon](https://img.shields.io/badge/macOS-Apple_Silicon-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.1/Buildly_0.2.1_aarch64.dmg) [![macOS Intel](https://img.shields.io/badge/macOS-Intel-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.1/Buildly_0.2.1_x64.dmg) |
-| **Linux** | [![Linux AppImage](https://img.shields.io/badge/Linux-AppImage-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.1/Buildly_0.2.1_amd64.AppImage) [![Linux .deb](https://img.shields.io/badge/Linux-.deb-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.1/Buildly_0.2.1_amd64.deb) [![Linux .rpm](https://img.shields.io/badge/Linux-.rpm-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.1/Buildly-0.2.1-1.x86_64.rpm) |
+| **Windows** 10, 11 | [![Windows Installer (.exe)](https://img.shields.io/badge/Windows-Installer_%28.exe%29-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.2/Buildly_0.2.2_x64-setup.exe)<br><sub>or the [.msi package](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.2/Buildly_0.2.2_x64_en-US.msi)</sub> |
+| **macOS** 11 or newer | [![macOS Apple Silicon](https://img.shields.io/badge/macOS-Apple_Silicon-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.2/Buildly_0.2.2_aarch64.dmg) [![macOS Intel](https://img.shields.io/badge/macOS-Intel-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.2/Buildly_0.2.2_x64.dmg) |
+| **Linux** | [![Linux AppImage](https://img.shields.io/badge/Linux-AppImage-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.2/Buildly_0.2.2_amd64.AppImage) [![Linux .deb](https://img.shields.io/badge/Linux-.deb-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.2/Buildly_0.2.2_amd64.deb) [![Linux .rpm](https://img.shields.io/badge/Linux-.rpm-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.2/Buildly-0.2.2-1.x86_64.rpm) |
 
 Buildly updates itself: new versions show up in the app, and one click installs them. Older versions and all files are on the [releases page](https://github.com/B3nd4b0ss/Buildly_Release/releases).
 
@@ -29,20 +29,21 @@ Buildly updates itself: new versions show up in the app, and one click installs 
 - **Run and watch.** Start dev servers, scripts and build tasks with live output and clickable local URLs. They keep running when you close Buildly and are back under your control when you open it again.
 - **Git without the terminal.** Changes with diffs, commit and push, pull, branches, history, and new GitHub repositories.
 - **Docker.** Containers with live CPU and memory, logs, shell, compose projects, images and volumes. Create containers from an image, a Dockerfile, a compose file or a script.
-- **Databases.** PostgreSQL, MySQL, MariaDB, MongoDB and Redis in Docker, plus SQLite: create them with a starter schema, browse tables, run queries, and connect them to a project (`.env`, driver and framework config included).
+- **Databases.** PostgreSQL, MySQL, MariaDB, MongoDB and Redis in Docker or on your own database servers, plus SQLite: create them with a starter schema, browse tables, run queries, and connect them to a project (`.env`, driver and framework config included).
+- **Your own database servers.** Connect the PostgreSQL, MySQL, MariaDB, MongoDB or Redis server you already have, on your computer or elsewhere, and Buildly creates new databases right inside it, each with a user of its own. No Docker needed.
 - **Tools.** See which languages and tools are installed (Node.js, Python, Java, Maven, Gradle, Go, Rust, .NET, PHP, Git, Docker…) and install or update them with one click.
 - **Logs.** Buildly keeps a log of what it does, so problems can be looked at afterwards.
 
 Everything runs on your computer. Buildly only listens on `127.0.0.1` and keeps its settings in `~/.buildly`.
 
-## What's new in 0.2.1
+## What's new in 0.2.2
 
-- fixed path of downloading tools added version controlls for tools
-- added ticketing system
+- small changes
+- Add database servers, installer terms (AGB) and one-time permissions
 
 ## Installing
 
-**Windows 10 or 11:** run the installer; no administrator rights needed. Windows may show "Windows protected your PC" because the app is not code-signed yet: click **More info → Run anyway**.
+**Windows 10 or 11:** run the installer and accept the terms of use; no administrator rights needed. At the end it asks once whether Buildly may work without asking every time (a Windows Firewall rule for Buildly's Node.js, for which Windows asks for permission, and no confirmation before administrator actions); you can change this later in Settings. Windows may show "Windows protected your PC" because the app is not code-signed yet: click **More info → Run anyway**.
 
 **macOS 11 or newer:** open the `.dmg` and drag Buildly into Applications. The app is not notarized yet, so the first start is blocked: right-click Buildly in Applications and choose **Open**, or run:
 
