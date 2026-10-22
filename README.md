@@ -9,16 +9,16 @@
 </p>
 
 <p align="center">
-  <strong>Version 0.2.5</strong> · released October 22, 2026 · Windows, macOS and Linux
+  <strong>Version 0.3.0</strong> · released October 22, 2026 · Windows, macOS and Linux
 </p>
 
 ## Download
 
 | System | Download |
 | --- | --- |
-| **Windows** 10, 11 | [![Windows Installer (.exe)](https://img.shields.io/badge/Windows-Installer_%28.exe%29-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.5/Buildly_0.2.5_x64-setup.exe)<br><sub>or the [.msi package](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.5/Buildly_0.2.5_x64_en-US.msi)</sub> |
-| **macOS** 11 or newer | [![macOS Apple Silicon](https://img.shields.io/badge/macOS-Apple_Silicon-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.5/Buildly_0.2.5_aarch64.dmg) [![macOS Intel](https://img.shields.io/badge/macOS-Intel-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.5/Buildly_0.2.5_x64.dmg) |
-| **Linux** | [![Linux AppImage](https://img.shields.io/badge/Linux-AppImage-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.5/Buildly_0.2.5_amd64.AppImage) [![Linux .deb](https://img.shields.io/badge/Linux-.deb-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.5/Buildly_0.2.5_amd64.deb) [![Linux .rpm](https://img.shields.io/badge/Linux-.rpm-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.2.5/Buildly-0.2.5-1.x86_64.rpm) |
+| **Windows** 10, 11 | [![Windows Installer (.exe)](https://img.shields.io/badge/Windows-Installer_%28.exe%29-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.0/Buildly_0.3.0_x64-setup.exe)<br><sub>or the [.msi package](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.0/Buildly_0.3.0_x64_en-US.msi)</sub> |
+| **macOS** 11 or newer | [![macOS Apple Silicon](https://img.shields.io/badge/macOS-Apple_Silicon-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.0/Buildly_0.3.0_aarch64.dmg) [![macOS Intel](https://img.shields.io/badge/macOS-Intel-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.0/Buildly_0.3.0_x64.dmg) |
+| **Linux** | [![Linux AppImage](https://img.shields.io/badge/Linux-AppImage-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.0/Buildly_0.3.0_amd64.AppImage) [![Linux .deb](https://img.shields.io/badge/Linux-.deb-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.0/Buildly_0.3.0_amd64.deb) [![Linux .rpm](https://img.shields.io/badge/Linux-.rpm-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.0/Buildly-0.3.0-1.x86_64.rpm) |
 
 Buildly updates itself: new versions show up in the app, and one click installs them. Older versions and all files are on the [releases page](https://github.com/B3nd4b0ss/Buildly_Release/releases).
 
@@ -36,10 +36,13 @@ Buildly updates itself: new versions show up in the app, and one click installs 
 
 Everything runs on your computer. Buildly only listens on `127.0.0.1` and keeps its settings in `~/.buildly`.
 
-## What's new in 0.2.5
+## What's new in 0.3.0
 
-- updated depedencies
-- proejcts are bundled together if in the same folder
+- updated tickets and added tests
+- updated the ticket ui and added more filters
+- added button for publishing local tickets directly
+- added submodules/subtree to git tab
+- fixing of searching subfolders in default workspacefolder
 
 ## Installing
 
