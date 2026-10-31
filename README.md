@@ -9,16 +9,16 @@
 </p>
 
 <p align="center">
-  <strong>Version 0.3.1.1</strong> · released October 31, 2026 · Windows, macOS and Linux
+  <strong>Version 0.3.2</strong> · released October 31, 2026 · Windows, macOS and Linux
 </p>
 
 ## Download
 
 | System | Download |
 | --- | --- |
-| **Windows** 10, 11 | [![Windows Installer (.exe)](https://img.shields.io/badge/Windows-Installer_%28.exe%29-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.1.1/Buildly_0.3.1%2B1_x64-setup.exe)<br><sub>or the [.msi package](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.1.1/Buildly_0.3.1%2B1_x64_en-US.msi)</sub> |
-| **macOS** 11 or newer | [![macOS Apple Silicon](https://img.shields.io/badge/macOS-Apple_Silicon-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.1.1/Buildly_0.3.1%2B1_aarch64.dmg) [![macOS Intel](https://img.shields.io/badge/macOS-Intel-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.1.1/Buildly_0.3.1%2B1_x64.dmg) |
-| **Linux** | [![Linux AppImage](https://img.shields.io/badge/Linux-AppImage-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.1.1/Buildly_0.3.1%2B1_amd64.AppImage) [![Linux .deb](https://img.shields.io/badge/Linux-.deb-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.1.1/Buildly_0.3.1%2B1_amd64.deb) [![Linux .rpm](https://img.shields.io/badge/Linux-.rpm-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.1.1/Buildly-0.3.1%2B1-1.x86_64.rpm) |
+| **Windows** 10, 11 | [![Windows Installer (.exe)](https://img.shields.io/badge/Windows-Installer_%28.exe%29-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly_0.3.2_x64-setup.exe)<br><sub>or the [.msi package](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly_0.3.2_x64_en-US.msi)</sub> |
+| **macOS** 11 or newer | [![macOS Apple Silicon](https://img.shields.io/badge/macOS-Apple_Silicon-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly_0.3.2_aarch64.dmg) [![macOS Intel](https://img.shields.io/badge/macOS-Intel-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly_0.3.2_x64.dmg) |
+| **Linux** | [![Linux AppImage](https://img.shields.io/badge/Linux-AppImage-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly_0.3.2_amd64.AppImage) [![Linux .deb](https://img.shields.io/badge/Linux-.deb-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly_0.3.2_amd64.deb) [![Linux .rpm](https://img.shields.io/badge/Linux-.rpm-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly-0.3.2-1.x86_64.rpm) |
 
 Buildly updates itself: new versions show up in the app, and one click installs them. Older versions and all files are on the [releases page](https://github.com/B3nd4b0ss/Buildly_Release/releases).
 
@@ -36,9 +36,16 @@ Buildly updates itself: new versions show up in the app, and one click installs 
 
 Everything runs on your computer. Buildly only listens on `127.0.0.1` and keeps its settings in `~/.buildly`.
 
-## What's new in 0.3.1.1
+## What's new in 0.3.2
 
-Maintenance release.
+- Projects deeper inside your folders are found now, not only those right at the top
+- A folder that is a Git repository around other projects (like a school folder with a project per module) shows as one project with a new **Projects** tab: every project inside it as a card, with its run button and actions. Pin one of them to also see it on the Projects page.
+- Choose for each folder whether its projects show as one project or each on its own: in Settings → Folders with projects, in a project's Settings tab, or from a card's ⋯ menu.
+- Shell scripts run with one click: `.sh`, `.ps1`, `.bat` and `.cmd` files in a project (and in folders like `scripts/`) are listed on its Overview and Run tabs and in the ▾ menu of its card. A folder with just scripts in it is a project too. On Windows, `.sh` scripts run with Git Bash, and you can answer their prompts in the terminal.
+- Buildly has a tray icon (menu bar icon on macOS): it lists your processes with Start, Stop and Restart, opens Buildly and quits it. Closing the window keeps Buildly in the tray, so notifications keep coming; turn this off in Settings → Desktop app.
+- Notifications when a process stops unexpectedly, a build or other task finishes, or the checks of one of your pull requests fail. They show while Buildly is not the window in front; choose which ones in Settings → Notifications. In the browser, allow them there first.
+- See what changed: **Release notes** in Settings shows the latest Buildly versions with their notes and marks the one you have.
+- GitHub Actions in the Git tab: a new **Actions** view lists the workflow runs of your branch or of all branches, the bar shows whether CI passed for your branch, and History and the pull request list show an icon per commit. A run opens right in Buildly with its jobs, steps and logs (the failed job's log opens by itself, at its first error), and you can re-run failed jobs, re-run everything or cancel a run there.
 
 ## Installing
 
