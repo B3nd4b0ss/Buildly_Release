@@ -9,16 +9,16 @@
 </p>
 
 <p align="center">
-  <strong>Version 0.3.2</strong> · released October 31, 2026 · Windows, macOS and Linux
+  <strong>Version 0.3.3</strong> · released November 1, 2026 · Windows, macOS and Linux
 </p>
 
 ## Download
 
 | System | Download |
 | --- | --- |
-| **Windows** 10, 11 | [![Windows Installer (.exe)](https://img.shields.io/badge/Windows-Installer_%28.exe%29-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly_0.3.2_x64-setup.exe)<br><sub>or the [.msi package](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly_0.3.2_x64_en-US.msi)</sub> |
-| **macOS** 11 or newer | [![macOS Apple Silicon](https://img.shields.io/badge/macOS-Apple_Silicon-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly_0.3.2_aarch64.dmg) [![macOS Intel](https://img.shields.io/badge/macOS-Intel-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly_0.3.2_x64.dmg) |
-| **Linux** | [![Linux AppImage](https://img.shields.io/badge/Linux-AppImage-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly_0.3.2_amd64.AppImage) [![Linux .deb](https://img.shields.io/badge/Linux-.deb-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly_0.3.2_amd64.deb) [![Linux .rpm](https://img.shields.io/badge/Linux-.rpm-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.2/Buildly-0.3.2-1.x86_64.rpm) |
+| **Windows** 10, 11 | [![Windows Installer (.exe)](https://img.shields.io/badge/Windows-Installer_%28.exe%29-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.3/Buildly_0.3.3_x64-setup.exe)<br><sub>or the [.msi package](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.3/Buildly_0.3.3_x64_en-US.msi)</sub> |
+| **macOS** 11 or newer | [![macOS Apple Silicon](https://img.shields.io/badge/macOS-Apple_Silicon-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.3/Buildly_0.3.3_aarch64.dmg) [![macOS Intel](https://img.shields.io/badge/macOS-Intel-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.3/Buildly_0.3.3_x64.dmg) |
+| **Linux** | [![Linux AppImage](https://img.shields.io/badge/Linux-AppImage-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.3/Buildly_0.3.3_amd64.AppImage) [![Linux .deb](https://img.shields.io/badge/Linux-.deb-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.3/Buildly_0.3.3_amd64.deb) [![Linux .rpm](https://img.shields.io/badge/Linux-.rpm-8B7CFF?style=for-the-badge)](https://github.com/B3nd4b0ss/Buildly_Release/releases/download/v0.3.3/Buildly-0.3.3-1.x86_64.rpm) |
 
 Buildly updates itself: new versions show up in the app, and one click installs them. Older versions and all files are on the [releases page](https://github.com/B3nd4b0ss/Buildly_Release/releases).
 
@@ -36,16 +36,25 @@ Buildly updates itself: new versions show up in the app, and one click installs 
 
 Everything runs on your computer. Buildly only listens on `127.0.0.1` and keeps its settings in `~/.buildly`.
 
-## What's new in 0.3.2
+## What's new in 0.3.3
 
-- Projects deeper inside your folders are found now, not only those right at the top
-- A folder that is a Git repository around other projects (like a school folder with a project per module) shows as one project with a new **Projects** tab: every project inside it as a card, with its run button and actions. Pin one of them to also see it on the Projects page.
-- Choose for each folder whether its projects show as one project or each on its own: in Settings → Folders with projects, in a project's Settings tab, or from a card's ⋯ menu.
-- Shell scripts run with one click: `.sh`, `.ps1`, `.bat` and `.cmd` files in a project (and in folders like `scripts/`) are listed on its Overview and Run tabs and in the ▾ menu of its card. A folder with just scripts in it is a project too. On Windows, `.sh` scripts run with Git Bash, and you can answer their prompts in the terminal.
-- Buildly has a tray icon (menu bar icon on macOS): it lists your processes with Start, Stop and Restart, opens Buildly and quits it. Closing the window keeps Buildly in the tray, so notifications keep coming; turn this off in Settings → Desktop app.
-- Notifications when a process stops unexpectedly, a build or other task finishes, or the checks of one of your pull requests fail. They show while Buildly is not the window in front; choose which ones in Settings → Notifications. In the browser, allow them there first.
-- See what changed: **Release notes** in Settings shows the latest Buildly versions with their notes and marks the one you have.
-- GitHub Actions in the Git tab: a new **Actions** view lists the workflow runs of your branch or of all branches, the bar shows whether CI passed for your branch, and History and the pull request list show an icon per commit. A run opens right in Buildly with its jobs, steps and logs (the failed job's log opens by itself, at its first error), and you can re-run failed jobs, re-run everything or cancel a run there.
+- **Run groups:** start a frontend, its backend and their database container with one click, and stop or restart them together. Make a group on a project's Run tab; each process in it shows whether it runs, and every command still runs on its own as before.
+- **Port overview:** the new Ports tab on the Processes page shows which dev servers, databases and containers listen on which port and whose they are — a process Buildly started, a Docker container, or another program — and frees a port by stopping what holds it. The system's own services stay out of the way under "All".
+- When a dev server can't start because its port is taken, its output now says what holds the port and offers to stop it and start again.
+- **Command palette:** press Ctrl+K (⌘K on macOS) or the search button in the sidebar to jump to any project or page, run a script, start a run group, switch a branch or stop a process — all from the keyboard.
+- **Full screen:** the desktop app now opens in full screen. Settings → Desktop app chooses whether it opens as a window, maximized or in full screen; F11 (⌃⌘F on macOS) turns full screen on and off at any time.
+- **Your own shortcuts:** Settings → Command palette adds your own entries to the palette — any palette command under your name, a command run in a project, or a link — and key combinations like Ctrl+Alt+D that run them from anywhere in Buildly.
+- **Live status:** projects and their Git status update by themselves when files change — edit, commit, switch a branch or pull in your editor or terminal and Buildly shows it within a second or two, without reloading.
+- **Your own templates:** save any project as a template (its ⋯ menu or Settings tab) and start new projects as a copy of it — without dependencies, build output or .env files, and with the new project's name filled in. They show under "Your templates" when you create a project.
+- **Dependencies:** a new page shows outdated packages and known vulnerabilities for all your projects at once — npm and pnpm, pip, Maven, Go and Cargo — with the fix for each advisory and one-click npm update / audit fix.
+- **Database backups:** back up a database with one click and restore it later — PostgreSQL, MySQL, MariaDB and MongoDB in Docker (no tools to install), databases on your servers, and SQLite files.
+- **CSV:** download any table as CSV, or add the rows of a CSV file to it.
+- **Migrations:** the project's Database tab finds its migration commands — Prisma, Drizzle, Knex, Sequelize, Django, Alembic, Rails, Laravel, EF Core, Flyway, Liquibase or its own migrate scripts — and runs them.
+- **WSL projects (Windows):** the folder picker lists your WSL distros, so projects inside WSL can be workspace folders. Their scripts, Git and dependency checks run inside the distro, VS Code opens them with Remote - WSL and the terminal opens in the distro.
+- **Terminal in the project:** the new Terminal tab on a project opens a shell right in Buildly, in the project folder — your WSL distro (Ubuntu…), PowerShell, cmd or Git Bash on Windows, your login shell on macOS and Linux. A Windows project opens in WSL at its /mnt/c/… path. Open as many as you like; they keep running while you look at other pages and close when Buildly closes.
+- **Dev containers:** projects with a devcontainer.json open in their container in VS Code, start it with one click, and can run all their commands inside it.
+- **GitLab, Gitea and Bitbucket:** connect them in Settings → Git hosting (GitLab and Gitea also self-hosted, Codeberg too). Their projects get merge and pull requests in the Git tab — list, create, review, merge, close — tickets synced with their issues, and new repositories when you create or publish a project.
+- **Deutsch:** Buildly speaks German. Settings → Appearance → Language chooses English, Deutsch or the system's language; dates follow your region.
 
 ## Installing
 
